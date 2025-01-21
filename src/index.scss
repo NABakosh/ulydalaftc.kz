@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Inter;
+  }
+h1{
+  font-size: 128px;
+  font-weight: 300;
+  color: rgba(255, 199, 27, 1);
+}
+.events{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  background: rgba(25, 29, 40, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  div{
+    display: flex;
+    gap:78px;
+  }
+  button{
+    margin-top: -20px;
+    width: 394px;
+    height: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: rgba(255, 199, 27, 1);
+    font-size: 32px;
+    font-weight: 500;
+    border-radius: 100px;
+
+  }
+  .swiper {
+    position: relative;
+    padding: 10px 0;
+
+    .swiper-slide {
+      transition: transform 0.3s ease;
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
+
+    // Центральный слайд — полный размер
+    .swiper-slide-active {
+      transform: scale(1);
+    }
+
+    // Левый и правый слайды — уменьшены на 20%
+    .swiper-slide:not(.swiper-slide-active) {
+      transform: scale(0.8);
+      opacity: 0.7;
+    }
+
+    // Кастомные стрелки
+    .arrow-left,
+    .arrow-right {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      z-index: 10;
+
+      &.arrow-left {
+        left: -40px;
+      }
+
+      &.arrow-right {
+        right: -40px;
+      }
+    }
+  }
+}
