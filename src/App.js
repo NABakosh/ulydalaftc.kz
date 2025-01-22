@@ -1,8 +1,16 @@
 import './index.scss';
-import Slider from './Slider'
+import Slider from './Components/Slider'
+import Header from './Components/Header'
+
 function App() {
   return (
 		<div className='App'>
+			<Header />
+			<section className='home'>
+				<div>
+					<h1>Uly Dala</h1>
+				</div>
+			</section>
 			<section className='events'>
 				<h1>Events</h1>
 				<div>
