@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/ulydalaftc.kz/static/css/main.a3991250.css",
-    "main.js": "/ulydalaftc.kz/static/js/main.620fdc02.js",
+    "main.css": "/ulydalaftc.kz/static/css/main.4517f480.css",
+    "main.js": "/ulydalaftc.kz/static/js/main.0bdaf8ad.js",
     "static/media/background.jpg": "/ulydalaftc.kz/static/media/background.1073dffa6e74aeaa5604.jpg",
     "index.html": "/ulydalaftc.kz/index.html",
-    "main.a3991250.css.map": "/ulydalaftc.kz/static/css/main.a3991250.css.map",
-    "main.620fdc02.js.map": "/ulydalaftc.kz/static/js/main.620fdc02.js.map"
+    "main.4517f480.css.map": "/ulydalaftc.kz/static/css/main.4517f480.css.map",
+    "main.0bdaf8ad.js.map": "/ulydalaftc.kz/static/js/main.0bdaf8ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.a3991250.css",
-    "static/js/main.620fdc02.js"
+    "static/css/main.4517f480.css",
+    "static/js/main.0bdaf8ad.js"
   ]
 }
