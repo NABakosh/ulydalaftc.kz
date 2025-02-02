@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ulydalaftc.kz.git/static/css/main.4e989116.css",
-    "main.js": "/ulydalaftc.kz.git/static/js/main.fb95715a.js",
-    "static/media/background.jpg": "/ulydalaftc.kz.git/static/media/background.1073dffa6e74aeaa5604.jpg",
-    "static/media/slice.png": "/ulydalaftc.kz.git/static/media/slice.4547a977aa298fd9c571.png",
-    "index.html": "/ulydalaftc.kz.git/index.html",
-    "main.4e989116.css.map": "/ulydalaftc.kz.git/static/css/main.4e989116.css.map",
-    "main.fb95715a.js.map": "/ulydalaftc.kz.git/static/js/main.fb95715a.js.map"
+    "main.css": "/ulydalaftc.kz/static/css/main.e96b23a2.css",
+    "main.js": "/ulydalaftc.kz/static/js/main.fb95715a.js",
+    "static/media/background.jpg": "/ulydalaftc.kz/static/media/background.1073dffa6e74aeaa5604.jpg",
+    "static/media/slice.png": "/ulydalaftc.kz/static/media/slice.4547a977aa298fd9c571.png",
+    "index.html": "/ulydalaftc.kz/index.html",
+    "main.e96b23a2.css.map": "/ulydalaftc.kz/static/css/main.e96b23a2.css.map",
+    "main.fb95715a.js.map": "/ulydalaftc.kz/static/js/main.fb95715a.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e989116.css",
+    "static/css/main.e96b23a2.css",
     "static/js/main.fb95715a.js"
   ]
 }
