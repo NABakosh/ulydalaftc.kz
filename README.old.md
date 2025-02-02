@@ -1,1 +1,0 @@
-"# ulydalaftc.kz" 
