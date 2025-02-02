@@ -2,8 +2,40 @@ import './index.scss';
 import Slider from './Components/Slider'
 import Header from './Components/Header'
 import Card from './Components/Card'
+import AboutUs from './Components/AboutUs'
+import React, { useEffect, useRef } from 'react'
+
+
 
 function App() {
+
+	const slides = [
+		{ url: 'img/events/events1.png', title: '1' },
+		{ url: 'img/events/events2.png', title: '2' },
+		{ url: 'img/events/events3.png', title: '3' },
+	]
+
+	const events1 = useRef(null)
+	const events2 = useRef(null)
+	const events3 = useRef(null)
+	const aboutUsRef1 = useRef(null)
+	const aboutUsRef2 = useRef(null)
+	const refs = [events1, events2, events3, aboutUsRef1, aboutUsRef2]
+		useEffect(() => {
+			const observer = new IntersectionObserver(
+				entries => {
+					entries.forEach(entry => {
+						entry.target.classList.toggle('show', entry.isIntersecting)
+					})
+				},
+				{ threshold: 0.4 }
+			)
+
+			refs.forEach(ref => ref.current && observer.observe(ref.current))
+			return () => observer.disconnect()
+		}, [])
+
+
 	const arr = [
 		{
 			imageUrl: 'img/ourteam/team1.png',
@@ -21,7 +53,7 @@ function App() {
 			role: 'mentor',
 		},
 	]
-  return (
+	return (
 		<div className='App'>
 			<Header />
 			<section className='home'>
@@ -30,21 +62,47 @@ function App() {
 				</div>
 			</section>
 			<section className='events'>
-				<h1>Events</h1>
-				<div>
-					<img src='img/events/arrowr.svg' />
-					<img src='img/events/events1.png' alt='Slide 1' />
-					<img src='img/events/events1.png' alt='Slide 1' />
-					<img src='img/events/events1.png' alt='Slide 1' />
-					<img src='img/events/arrowr.svg' />
+				<div className='overlay'>
+					<main>
+						<h1>SDU STEM week</h1>
+						<div className='slice'></div>
+						<article>
+							<aside>
+								<p>
+									Our team participated in the SDU STEM Week, where we had the
+									opportunity to showcase our robot to students and professors.
+									We introduced them to the exciting world of robotics,
+									highlighting the potential of innovation and technology in
+									shaping the future. It was an amazing experience to share our
+									passion and inspire others!
+								</p>
+								<img src='img/events/overlay-sdu.png' />
+							</aside>
+							<p>
+								During the event, we engaged with attendees, demonstrating the
+								capabilities of our Robot and sparking conversations about the
+								future of robotics and its impact on various industries.
+							</p>
+						</article>
+						<button>Close</button>
+					</main>
 				</div>
-				<button>
+				<h1 ref={events1}>Events</h1>
+				<div ref={events2}>
+					<img src='img/events/arrowl.svg' alt='Slide 2' />
+					<img src='img/events/events2.png' alt='Slide 2' />
+					<img src='img/events/events2.png' alt='Slide 2' />
+					<img src='img/events/events2.png' alt='Slide 2' />
+					<img src='img/events/arrowr.svg' alt='Slide 2' />
+				</div>
+				<button ref={events3}>
 					READ MORE 
 					<img width={55} src='img/events/barrow.svg' />
 				</button>
 			</section>
+			<div className='slice'></div>
 			<section className='aboutus'>
-				<article>
+				<article ref={aboutUsRef1}>
 					<h1>ABOUT US</h1>
 					<p>
 						Team Uly Dala (27832) from Almaty, Kazakhstan, takes its name from
@@ -54,7 +112,7 @@ function App() {
 						challenging ourselves each season.
 					</p>
 				</article>
-				<aside>
+				<aside ref={aboutUsRef2}>
 					<main>
 						<img width={670} height={380} src='img/aboutus/main.png' />
 						<p>
@@ -107,6 +165,7 @@ function App() {
 					</nav>
 				</aside>
 			</section>
+			<div className='slice'></div>
 			<section className='ourteam'>
 				<article>
 					<h1>OUR TEAM</h1>
@@ -125,6 +184,7 @@ function App() {
 					<img width={55} src='img/events/barrow.svg' />
 				</button>
 			</section>
+			<div className='slice'></div>
 			<section className='ourrobot'>
 				<article>
 					<h1>OUR ROBOT</h1>
@@ -172,12 +232,36 @@ function App() {
 				<aside>
 					<div className='robotSideBar'>
 						<div>
-							<img width={130} height={156} src='img/ourrobot/1.png' />
-							<img width={130} height={156} src='img/ourrobot/2.png' />
-							<img width={130} height={156} src='img/ourrobot/3.png' />
-							<img width={130} height={156} src='img/ourrobot/4.png' />
-							<img width={111} height={145} src='img/ourrobot/5.png' />
-							<img width={130} height={100} src='img/ourrobot/6.png' />
+							<img
+								width={130 / 1.2}
+								height={156 / 1.2}
+								src='img/ourrobot/1.png'
+							/>
+							<img
+								width={130 / 1.2}
+								height={130 / 1.2}
+								src='img/ourrobot/2.png'
+							/>
+							<img
+								width={120 / 1.2}
+								height={120 / 1.2}
+								src='img/ourrobot/3.png'
+							/>
+							<img
+								width={130 / 1.2}
+								height={130 / 1.2}
+								src='img/ourrobot/4.png'
+							/>
+							<img
+								width={85 / 1.2}
+								height={105 / 1.2}
+								src='img/ourrobot/5.png'
+							/>
+							<img
+								width={130 / 1.2}
+								height={80 / 1.2}
+								src='img/ourrobot/6.png'
+							/>
 						</div>
 						<p>
 							{' '}
@@ -190,14 +274,15 @@ function App() {
 							evaluate, and refine our designs to achieve peak performance.
 							Whether it's enhancing grip mechanisms, improving drive systems,
 							or fine-tuning autonomous routines, our robot evolves along with
-							our skills and experience. Ultimately, our mission is not just to
-							build great robots but to foster a passion for science,
-							technology, engineering, and math (STEM) while pushing the
-							boundaries of what’s possible in competitive robotics.
+							our skills and experience.
+							<br /> Ultimately, our mission is not just to build great robots
+							but to foster a passion for science, technology, engineering, and
+							math (STEM) while pushing the boundaries of what’s possible in
+							competitive robotics.
 						</p>
 					</div>
 					<nav>
-						<img />
+						<img src='img/ourrobot/7.png' />
 						<p>
 							For more precise information you can watch our tutorials on
 							YouTube !
@@ -205,6 +290,49 @@ function App() {
 					</nav>
 				</aside>
 			</section>
+			<div className='slice'></div>
+
+			<section className='sponsors'>
+				<article>
+					<h1>Our Sponsors</h1>
+					<p>
+						We are grateful to our sponsors for supporting our mission and
+						helping us achieve our goals.
+					</p>
+				</article>
+				<div>
+					<img src='img/sponsors/1.png' />
+					<img src='img/sponsors/2.png' />
+					<img src='img/sponsors/3.png' />
+					<img src='img/sponsors/4.png' />
+					<img src='img/sponsors/5.png' />
+					<img src='img/sponsors/6.png' />
+				</div>
+			</section>
+			<footer>
+				<article>
+					<h2>Contact us</h2>
+					<p>
+						<img src='img/footer/location_on.png' />Kazakhstan, Almaty,
+						Gymnasium No. 140 named after Mukagali Makatayev
+					</p>
+					<p>
+						<img src='img/footer/phone.png' /> Call us: +7 *** *** ****
+					</p>
+					<p>
+						<img src='img/footer/mail.png' /> ulydalaprotech@gmail.com
+					</p>
+				</article>
+				<div></div>
+				<aside>
+					<h2>Follow us</h2>
+					<p>
+						<img src='icons/youtube.png' alt='YouTube' />
+						<img src='icons/instagram.png' alt='Instagram' />
+						<img src='icons/telegram.png' alt='Telegram' />
+					</p>
+				</aside>
+			</footer>
 		</div>
 	)
 }

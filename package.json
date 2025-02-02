@@ -2,13 +2,15 @@
 	"name": "ulydalaftc.kz",
 	"version": "0.1.0",
 	"private": true,
-	
 	"dependencies": {
 		"cra-template": "1.2.0",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
 		"react-scripts": "5.0.1",
+		"react-slick": "^0.30.3",
 		"sass": "^1.83.4",
+		"slick": "^1.12.2",
+		"slick-carousel": "^1.8.1",
 		"swiper": "^11.2.1"
 	},
 	"scripts": {
