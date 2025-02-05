@@ -81,9 +81,24 @@ const Home = () => {
 				<h1 ref={events1}>Events</h1>
 				<div ref={events2}>
 					<img src='img/events/arrowl.svg' alt='Slide 2' />
-					<img src='img/events/events2.png' alt='Slide 2' />
-					<img src='img/events/events2.png' alt='Slide 2' />
-					<img src='img/events/events2.png' alt='Slide 2' />
+					<img
+						width={330}
+						height={330}
+						src='img/events/events2.png'
+						alt='Slide 2'
+					/>
+					<img
+						width={400}
+						height={400}
+						src='img/events/events2.png'
+						alt='Slide 2'
+					/>
+					<img
+						width={330}
+						height={330}
+						src='img/events/events2.png'
+						alt='Slide 2'
+					/>
 					<img src='img/events/arrowr.svg' alt='Slide 2' />
 				</div>
 				<button ref={events3}>
