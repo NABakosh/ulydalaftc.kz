@@ -1,9 +1,9 @@
 import React from 'react'
-
+import './aboutus.scss'
 const AboutUs = () => {
 	return (
 		<div className='aboutuss'>
-			<img width={170} height={150} src='img/arqar.png' />
+			
 		</div>
 	)
 }
