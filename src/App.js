@@ -2,20 +2,22 @@ import './index.scss';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Slider from './Components/Slider'
 import Header from './Components/Header'
-import AboutUs from './AboutUs'
 import Home from "./Home"
+import Footer from './Components/Footer'
+import OurRobot from './OurRobot';
 
 function App() {
 
 	
 	return (
-				<div className='App'>
+		<div className='App'>
 		<Router>
 				<Header />
 				<Routes>
 					<Route path='/' element={<Home/>}/>
-					<Route path='/AboutUs' element={<AboutUs />} />
+					<Route path='/OurRobot' element={<OurRobot />} />
 				</Routes>
+				<Footer/>
 			</Router>
 		</div>
 	)
