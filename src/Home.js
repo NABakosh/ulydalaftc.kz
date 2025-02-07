@@ -1,11 +1,95 @@
 import React, { useEffect, useRef } from 'react'
 import Card from './Components/Card'
+import { useState } from 'react'
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+
+const PreviousButton = ({ onClick }) => (
+	<img
+		className='slick-prev custom-arrow'
+		onClick={onClick}
+		src='/img/events/arrowl.svg'
+		alt='Previous'
+	/>
+)
+
+const NextButton = ({ onClick }) => (
+	<img
+		className='custom-arrow slick-next'
+		onClick={onClick}
+		src='/img/events/arrowr.svg'
+		alt='Next'
+	/>
+)
+
+
+
+const SliderComponent = ({ sliderItems, handleItemClick }) => {
+	const settings = {
+		prevArrow: <PreviousButton />,
+		nextArrow: <NextButton />,
+		draggable: true,
+		autoplaySpeed: 500,
+		dots: true,
+		infinite: true,
+		speed: 500,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		pauseOnHover: true,
+		centerMode: false, // Это важно
+	}
+	return (
+		<Slider {...settings}>
+			{sliderItems.map(item => (
+				<img className='slider'
+					key={item.id}
+					src={item.url}
+					onClick={() => handleItemClick(item.id)}
+				/>
+			))}
+		</Slider>
+	)
+}
 const Home = () => {
-	const slides = [
-		{ url: 'img/events/events1.png', title: '1' },
-		{ url: 'img/events/events2.png', title: '2' },
-		{ url: 'img/events/events3.png', title: '3' },
+	const season = '2024' // Укажи нужный сезон
+	const eventCode = 'KZCMP'
+	const sliderItems = [
+		{
+			id: 1,
+			title: 'SDU stem week',
+			url: 'img/events/events2.png',
+			text: `Our team participated in the SDU STEM Week, where we had the
+										opportunity to showcase our robot to students and
+										professors. We introduced them to the exciting world of
+										robotics, highlighting the potential of innovation and
+										technology in shaping the future. It was an amazing
+										experience to share our passion and inspire others!`,
+			text2: `During the event, we engaged with attendees, demonstrating the
+									capabilities of our Robot and sparking conversations about the
+									future of robotics and its impact on various industries.`,
+		},
+		{
+			id: 2,
+			title: 'Второй экран',
+			url: 'img/events/events1.png',
+			text: 'Это контент второго экрана',
+			text2: 'asd',
+		},
+		{
+			id: 3,
+			title: 'Третий экран',
+			url: 'img/events/events1.png',
+			text1: 'Это контент третьего экрана',
+			text2: 'asd',
+		},
 	]
+	const [selectedId, setSelectedId] = useState(null)
+	
+		// Обработчик клика
+		const handleItemClick = id => {
+			setSelectedId(id)
+		}
 
 	const events1 = useRef(null)
 	const events2 = useRef(null)
@@ -52,53 +136,34 @@ const Home = () => {
 				</div>
 			</section>
 			<section className='events'>
-				<div className='overlay'>
-					<main>
-						<h1>SDU STEM week</h1>
-						<div className='slice'></div>
-						<article>
-							<aside>
-								<p>
-									Our team participated in the SDU STEM Week, where we had the
-									opportunity to showcase our robot to students and professors.
-									We introduced them to the exciting world of robotics,
-									highlighting the potential of innovation and technology in
-									shaping the future. It was an amazing experience to share our
-									passion and inspire others!
-								</p>
-								<img src='img/events/overlay-sdu.png' />
-							</aside>
-							<p>
-								During the event, we engaged with attendees, demonstrating the
-								capabilities of our Robot and sparking conversations about the
-								future of robotics and its impact on various industries.
-							</p>
-						</article>
-						<button>Close</button>
-					</main>
-				</div>
+				{sliderItems.map(item => (
+					<div
+						className='overlay'
+						key={item.id}
+						style={{ display: selectedId === item.id ? 'flex' : 'none' }}
+					>
+						<main>
+							<h1>{item.title}</h1>
+							<div className='slice'></div>
+							<article>
+								<aside>
+									<p>{item.text}</p>
+									<img src='img/events/overlay-sdu.png' />
+								</aside>
+								<p>{item.text2}</p>
+							</article>
+							<button className='button' onClick={() => setSelectedId(null)}>
+								Close
+							</button>
+						</main>
+					</div>
+				))}
 				<h1 ref={events1}>Events</h1>
-				<div ref={events2}>
-					<img src='img/events/arrowl.svg' alt='Slide 2' />
-					<img
-						width={330}
-						height={330}
-						src='img/events/events2.png'
-						alt='Slide 2'
+				<div className='slider-item' ref={events2}>
+					<SliderComponent
+						sliderItems={sliderItems}
+						handleItemClick={handleItemClick}
 					/>
-					<img
-						width={400}
-						height={400}
-						src='img/events/events2.png'
-						alt='Slide 2'
-					/>
-					<img
-						width={330}
-						height={330}
-						src='img/events/events2.png'
-						alt='Slide 2'
-					/>
-					<img src='img/events/arrowr.svg' alt='Slide 2' />
 				</div>
 				<div className='seeAll' ref={events3}>
 					<p>See all</p>
@@ -183,7 +248,7 @@ const Home = () => {
 						<Card name={obj.name} photoUrl={obj.imageUrl} role={obj.role} />
 					))}
 				</main>
-				<button>
+				<button className='button'>
 					READ MORE 
 					<img width={55} src='img/events/barrow.svg' />
 				</button>

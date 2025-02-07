@@ -5,19 +5,21 @@ import Header from './Components/Header'
 import Home from "./Home"
 import Footer from './Components/Footer'
 import OurRobot from './OurRobot';
+import OurTeam from './OurTeam';
 
 function App() {
 
 	
 	return (
 		<div className='App'>
-		<Router>
+			<Router>
 				<Header />
 				<Routes>
-					<Route path='/' element={<Home/>}/>
+					<Route path='/' element={<Home />} />
 					<Route path='/OurRobot' element={<OurRobot />} />
+					<Route path='/OurTeam' element={<OurTeam />} />
 				</Routes>
-				<Footer/>
+				<Footer />
 			</Router>
 		</div>
 	)
