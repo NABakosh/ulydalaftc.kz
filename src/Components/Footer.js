@@ -15,7 +15,6 @@ const Footer = () =>{
 						<img src='img/footer/mail.png' /> ulydalaprotech@gmail.com
 					</p>
 				</article>
-				<div></div>
 				<aside>
 					<h2>Follow us</h2>
 					<p>
