@@ -4,6 +4,8 @@ import { useState } from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import sliderItems from './data/sliderItems.json'
+import { Link } from 'react-router-dom'
 
 const PreviousButton = ({ onClick }) => (
 	<img
@@ -25,20 +27,23 @@ const NextButton = ({ onClick }) => (
 
 
 
-const SliderComponent = ({ sliderItems, handleItemClick }) => {
+const SliderComponent = ({handleItemClick }) => {
 	const settings = {
 		prevArrow: <PreviousButton />,
 		nextArrow: <NextButton />,
 		draggable: true,
-		autoplaySpeed: 500,
-		dots: true,
-		infinite: true,
-		speed: 500,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		dots: false,
+		infinite: true, // Включаем бесконечный режим
+		speed: 1000,
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		pauseOnHover: true,
-		centerMode: false, // Это важно
+		centerMode: true,
+		centerPadding: '0px', // Убираем "отступы" по бокам
 	}
+
 	return (
 		<Slider {...settings}>
 			{sliderItems.map(item => (
@@ -52,38 +57,21 @@ const SliderComponent = ({ sliderItems, handleItemClick }) => {
 	)
 }
 const Home = () => {
+	const handleOpenOverlay = id => {
+		setSelectedId(id)
+	}
+
+	const handleCloseOverlay = () => {
+		document
+			.querySelector('.overlay.show-overlay')
+			?.classList.add('hide-overlay')
+		setTimeout(() => {
+			setSelectedId(null) // Скрываем оверлей после завершения анимации
+		}, 500) // Длительность анимации закрытия
+	}
+
 	const season = '2024' // Укажи нужный сезон
 	const eventCode = 'KZCMP'
-	const sliderItems = [
-		{
-			id: 1,
-			title: 'SDU stem week',
-			url: 'img/events/events2.png',
-			text: `Our team participated in the SDU STEM Week, where we had the
-										opportunity to showcase our robot to students and
-										professors. We introduced them to the exciting world of
-										robotics, highlighting the potential of innovation and
-										technology in shaping the future. It was an amazing
-										experience to share our passion and inspire others!`,
-			text2: `During the event, we engaged with attendees, demonstrating the
-									capabilities of our Robot and sparking conversations about the
-									future of robotics and its impact on various industries.`,
-		},
-		{
-			id: 2,
-			title: 'Второй экран',
-			url: 'img/events/events1.png',
-			text: 'Это контент второго экрана',
-			text2: 'asd',
-		},
-		{
-			id: 3,
-			title: 'Третий экран',
-			url: 'img/events/events1.png',
-			text1: 'Это контент третьего экрана',
-			text2: 'asd',
-		},
-	]
 	const [selectedId, setSelectedId] = useState(null)
 	
 		// Обработчик клика
@@ -104,7 +92,7 @@ const Home = () => {
 					entry.target.classList.toggle('show', entry.isIntersecting)
 				})
 			},
-			{ threshold: 0.4 }
+			{ threshold: 0.4	 }
 		)
 
 		refs.forEach(ref => ref.current && observer.observe(ref.current))
@@ -138,35 +126,35 @@ const Home = () => {
 			<section className='events'>
 				{sliderItems.map(item => (
 					<div
-						className='overlay'
+						className={`overlay ${
+							selectedId === item.id ? 'show-overlay' : ''
+						}`}
 						key={item.id}
-						style={{ display: selectedId === item.id ? 'flex' : 'none' }}
+						onClick={handleCloseOverlay}
 					>
-						<main>
+						<main onClick={e => e.stopPropagation()}>
+							<span onClick = {handleCloseOverlay}>x</span>
 							<h1>{item.title}</h1>
 							<div className='slice'></div>
 							<article>
 								<aside>
 									<p>{item.text}</p>
-									<img src='img/events/overlay-sdu.png' />
+									<img src={item.url2} />
 								</aside>
 								<p>{item.text2}</p>
 							</article>
-							<button className='button' onClick={() => setSelectedId(null)}>
-								Close
-							</button>
+							<button className='button'>Read More</button>
 						</main>
 					</div>
 				))}
-				<h1 ref={events1}>Events</h1>
+				<h1 ref={events1}>Events </h1>
 				<div className='slider-item' ref={events2}>
-					<SliderComponent
-						sliderItems={sliderItems}
-						handleItemClick={handleItemClick}
-					/>
+					<SliderComponent handleItemClick={handleOpenOverlay} />
 				</div>
 				<div className='seeAll' ref={events3}>
-					<p>See all</p>
+					<Link to='/events'>
+						<p>See all</p>
+					</Link>
 				</div>
 			</section>
 			<div className='slice'></div>
