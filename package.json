@@ -2,7 +2,7 @@
 	"name": "ulydalaftc.kz",
 	"version": "0.1.0",
 	"private": true,
-	
+	"homepage": "https://nabakosh.github.io/ulydalaftc.kz",
 	"dependencies": {
 		"cra-template": "1.2.0",
 		"lucide-react": "^0.475.0",
