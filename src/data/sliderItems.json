@@ -40,10 +40,10 @@
 		"text2": "We also made meaningful connections with other teams, including some of the most experienced in the country, which helped us grow and broaden our understanding of robotics and teamwork."
 	},
 	{
-		"id": 6,
+		"id": "6",
 		"title": "Visit to nursing home",
-		"url": "img/events/events1.png",
-		"url2": "img/events/events1.png",
+		"url": "/img/events/events6.png",
+		"url2": "img/events/events6.png",
 		"text": "Giving back to the community is an essential part of our team’s mission. We visited a local nursing home, where we organized a concert for the residents and shared technological updates with them. Demonstrating our robot brought smiles and curiosity, making it a truly heartwarming experience. ",
 		"text2": "We cherished the opportunity to engage with the seniors, hear their stories, and bring a touch of innovation to their day. This event reminded us of the power of connection through technology."
 	},

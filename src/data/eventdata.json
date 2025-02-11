@@ -1,0 +1,121 @@
+[
+	{
+		"id": "1",
+		"title": "Ruh Marathon",
+		"data": [
+			{
+                "id" : "a1",
+				"url": "/img/events/events1.png",
+				"text": "At the start of the season, our team organized the “Ruh Marathon” Sportakiada at our school to inspire students to embrace both sports and robotics. This event was designed to highlight the importance of teamwork, perseverance, and physical activity—values that are crucial in both fields. The event brought together junior high school students who participated in a series of sports tasks, including relay races, team-building challenges, and other physical activities. The idea behind these tasks was to encourage students to work together, just like in robotics, where collaboration is essential for success. We wanted to show that the same qualities—discipline, communication, and dedication—apply in both sports and robotics."
+			},
+			{
+				"url": "/img/events/events2.png",
+				"text": "Второй текст"
+			},
+			{
+				"url": "/img/events/events3.png",
+				"text": "Третий текст"
+			}
+		]
+	},
+	{
+		"id": "2",
+		"title": "SDU stem week",
+		"data": [
+			{
+                "id":"b1",
+				"url": "",
+				"text": ""
+			},
+			{
+				"url": "",
+				"text": ""
+			},
+			{
+				"url": "",
+				"text": ""
+			}
+		]
+	},
+	{
+		"id": "3",
+		"title": "Website Workshop",
+		"url": "img/events/events3.png",
+		"url2": "img/events/events3.png",
+		"text": "",
+		"text2": "",
+		"text3": ""
+	},
+	{
+		"id": "4",
+		"title": "Almaty Regional Championship",
+		"url": "img/events/events4.png",
+		"url2": "img/events/events4.png",
+		"text": "",
+		"text2": "",
+		"text3": ""
+	},
+	{
+		"id": "5",
+		"title": "Mangystau First Championship",
+		"url": "img/events/events5.png",
+		"url2": "img/events/events5.png",
+		"text": "",
+		"text2": "",
+		"text3": ""
+	},
+	{
+		"id": "6",
+		"title": "Visit to nursing home",
+		"url": "img/events/events6.png",
+		"url2": "img/events/events6.png",
+		"text": "",
+		"text2": "",
+		"text3": ""
+	},
+	{
+		"id": "7",
+		"title": "Robotek Grand Tournament",
+		"url": "img/events/events7.png",
+		"url2": "img/events/events7.png",
+		"text": "",
+		"text2": "",
+		"text3": ""
+	},
+	{
+		"id": "8",
+		"title": "Alem Championship",
+		"url": "img/events/events8.png",
+		"url2": "img/events/events8.png",
+		"text": "",
+		"text2": "",
+		"text3": ""
+	},
+	{
+		"id": "9",
+		"title": "Digital Almaty",
+		"url": "img/events/events9.png",
+		"url2": "img/events/events9.png",
+		"text": "",
+		"text2": "",
+		"text3": ""
+	},
+	{
+		"id": "10",
+		"title": "Uly Dala Fest",
+		"url": "img/events/events10.png",
+		"url2": "img/events/events10.png",
+		"text": "",
+		"text2": "",
+		"text3": ""
+	},
+	{
+		"id": "11",
+		"title": "Daryn First Championship:",
+		"url": "img/events/events11.png",
+		"url2": "img/events/events11.png",
+		"text": "",
+		"text2": "",
+		"text3": ""
+	}
+]

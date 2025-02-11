@@ -1,11 +1,10 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState} from 'react'
 import Card from './Components/Card'
-import { useState } from 'react'
 import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import sliderItems from './data/sliderItems.json'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const PreviousButton = ({ onClick }) => (
 	<img
@@ -28,6 +27,7 @@ const NextButton = ({ onClick }) => (
 
 
 const SliderComponent = ({handleItemClick }) => {
+
 	const settings = {
 		prevArrow: <PreviousButton />,
 		nextArrow: <NextButton />,
@@ -43,11 +43,12 @@ const SliderComponent = ({handleItemClick }) => {
 		centerMode: true,
 		centerPadding: '0px', // Убираем "отступы" по бокам
 	}
-
+ 	
 	return (
 		<Slider {...settings}>
 			{sliderItems.map(item => (
-				<img className='slider'
+				<img
+					className='slider'
 					key={item.id}
 					src={item.url}
 					onClick={() => handleItemClick(item.id)}
@@ -57,6 +58,11 @@ const SliderComponent = ({handleItemClick }) => {
 	)
 }
 const Home = () => {
+	const navigate = useNavigate()
+
+	const handleReadMore = id => {
+		navigate(`/event/${id}`)
+	}
 	const handleOpenOverlay = id => {
 		setSelectedId(id)
 	}
@@ -73,11 +79,11 @@ const Home = () => {
 	const season = '2024' // Укажи нужный сезон
 	const eventCode = 'KZCMP'
 	const [selectedId, setSelectedId] = useState(null)
-	
-		// Обработчик клика
-		const handleItemClick = id => {
-			setSelectedId(id)
-		}
+
+	// Обработчик клика
+	const handleItemClick = id => {
+		setSelectedId(id)
+	}
 
 	const events1 = useRef(null)
 	const events2 = useRef(null)
@@ -92,7 +98,7 @@ const Home = () => {
 					entry.target.classList.toggle('show', entry.isIntersecting)
 				})
 			},
-			{ threshold: 0.4	 }
+			{ threshold: 0.4 }
 		)
 
 		refs.forEach(ref => ref.current && observer.observe(ref.current))
@@ -133,7 +139,7 @@ const Home = () => {
 						onClick={handleCloseOverlay}
 					>
 						<main onClick={e => e.stopPropagation()}>
-							<span onClick = {handleCloseOverlay}>x</span>
+							<span onClick={handleCloseOverlay}>x</span>
 							<h1>{item.title}</h1>
 							<div className='slice'></div>
 							<article>
@@ -143,7 +149,9 @@ const Home = () => {
 								</aside>
 								<p>{item.text2}</p>
 							</article>
-							<button className='button'>Read More</button>
+							<button className='button' onClick={() => handleReadMore(item.id)}>
+								Read More
+							</button>
 						</main>
 					</div>
 				))}
