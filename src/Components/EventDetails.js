@@ -19,13 +19,17 @@ const EventDetails = () => {
 		<div className='eventspage'>
 			<h1 className='event-title'>{event.title}</h1>
 			<article>
-				{event.data.map((data,index) => (
-					<div key={id} className={`event-${data.id}  ${index%2 === 0 ? 'normal' : 'reverse'}`} >
-						<img src={data.url}/>
+				{event.data.map((data, index) => (
+					<div
+						key={id}
+						className={`event-${data.id}  ${
+							index % 2 === 0 ? 'normal' : 'reverse'
+						}`}
+					>
+						<img alt='' src={data.url} />
 						<p>{data.text}</p>
 					</div>
 				))}
-
 			</article>
 		</div>
 	)

@@ -51,21 +51,21 @@ const OurRobot = () =>{
 							</p>
 						</div>
 						<nav>
-							<img src='img/ourrobot/1.png' />
-							<img src='img/ourrobot/2.png' />
-							<img src='img/ourrobot/3.png' />
-							<img src='img/ourrobot/4.png' />
+							<img alt='' src='img/ourrobot/1.png' />
+							<img alt='' src='img/ourrobot/2.png' />
+							<img alt='' src='img/ourrobot/3.png' />
+							<img alt='' src='img/ourrobot/4.png' />
 						</nav>
 					</div>
 					<div className='robotSideBar'>
 						<div>
-						<img height={150} src='img/ourrobot/5.png' />
-						<img width={200} height={120}  src='img/ourrobot/6.png' />
+							<img alt='' height={150} src='img/ourrobot/5.png' />
+							<img alt='' width={200} height={120} src='img/ourrobot/6.png' />
 						</div>
-						<img src='img/ourrobot/7.png' />
+						<img alt='' src='img/ourrobot/7.png' />
 						<p>
 							For more precise information you can watch our tutorials on 
-							<span>YouTube !</span>	
+							<span>YouTube !</span>
 						</p>
 					</div>
 				</aside>

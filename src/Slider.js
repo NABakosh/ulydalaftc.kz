@@ -44,10 +44,10 @@ const Slider = () => {
 					<img
 						src={item.url}
 						key={item.id}
+						alt=''
 						className='slider-item'
 						onClick={() => handleItemClick(item.id)}
-					>
-					</img>
+					></img>
 				))}
 			</div>
 

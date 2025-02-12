@@ -48,6 +48,7 @@ const SliderComponent = ({handleItemClick }) => {
 		<Slider {...settings}>
 			{sliderItems.map(item => (
 				<img
+					alt=''
 					className='slider'
 					key={item.id}
 					src={item.url}
@@ -145,11 +146,14 @@ const Home = () => {
 							<article>
 								<aside>
 									<p>{item.text}</p>
-									<img src={item.url2} />
+									<img alt='' src={item.url2} />
 								</aside>
 								<p>{item.text2}</p>
 							</article>
-							<button className='button' onClick={() => handleReadMore(item.id)}>
+							<button
+								className='button'
+								onClick={() => handleReadMore(item.id)}
+							>
 								Read More
 							</button>
 						</main>
@@ -179,7 +183,7 @@ const Home = () => {
 				</article>
 				<aside ref={aboutUsRef2}>
 					<main>
-						<img width={670} height={380} src='img/aboutus/main.png' />
+						<img alt='' width={670} height={380} src='img/aboutus/main.png' />
 						<p>
 							Our mission is to advance STEM learning by fostering innovation,
 							problem-solving, and teamwork. Through hands-on experiences and
@@ -194,6 +198,7 @@ const Home = () => {
 							<div>
 								<img
 									width={300}
+									alt=''
 									height={170}
 									src='img/aboutus/aside1.png'
 									style={{ objectFit: 'cover' }}
@@ -201,6 +206,7 @@ const Home = () => {
 								<img
 									width={300}
 									height={170}
+									alt=''
 									src='img/aboutus/aside2.png'
 									style={{ objectFit: 'cover' }}
 								/>
@@ -209,12 +215,14 @@ const Home = () => {
 								<img
 									width={300}
 									height={170}
+									alt=''
 									src='img/aboutus/aside3.png'
 									style={{ objectFit: 'cover' }}
 								/>
 								<img
 									width={300}
 									height={170}
+									alt=''
 									src='img/aboutus/aside4.png'
 									style={{ objectFit: 'cover' }}
 								/>
@@ -246,7 +254,7 @@ const Home = () => {
 				</main>
 				<button className='button'>
 					READ MORE 
-					<img width={55} src='img/events/barrow.svg' />
+					<img width={55} alt='' src='img/events/barrow.svg' />
 				</button>
 			</section>
 			<div className='slice'></div>
@@ -260,12 +268,12 @@ const Home = () => {
 					</p>
 				</article>
 				<div>
-					<img src='img/sponsors/1.png' />
-					<img src='img/sponsors/2.png' />
-					<img src='img/sponsors/3.png' />
-					<img src='img/sponsors/4.png' />
-					<img src='img/sponsors/5.png' />
-					<img src='img/sponsors/6.png' />
+					<img src='img/sponsors/1.png' alt='' />
+					<img src='img/sponsors/2.png' alt='' />
+					<img src='img/sponsors/3.png' alt='' />
+					<img src='img/sponsors/4.png' alt='' />
+					<img src='img/sponsors/5.png' alt='' />
+					<img src='img/sponsors/6.png' alt='' />
 				</div>
 			</section>
 		</>

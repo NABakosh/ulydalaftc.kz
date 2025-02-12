@@ -18,13 +18,11 @@ const OurTeam = () => {
 			<>
 				<div className='teampage'>
 					<h1>OUR TEAM</h1>
-                    <main>
-					{arr.map(obj => (
-                        <TeamCard img={obj.img}
-                        name = {obj.name}
-                        role = {obj.role} />
-                    ))}
-                    </main>
+					<main>
+						{arr.map(obj => (
+							<TeamCard img={obj.img} name={obj.name} role={obj.role} alt={obj.name} />
+						))}
+					</main>
 				</div>
 			</>
 		)

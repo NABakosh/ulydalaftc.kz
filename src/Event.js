@@ -5,7 +5,7 @@ const Event = () => {
 				<h1 className='event-title'>Almaty Regional FIRST Championship</h1>
 				<article>
 					<div>
-						<img src='img/events/events1.png' />
+						<img src='img/events/events1.png' alt='' />
 						<p>
 							Despite being a newly formed team, we are incredibly proud to have
 							won the Inspire Award - 2nd Place at the Almaty Regional FIRST
@@ -32,10 +32,10 @@ const Event = () => {
 							critically under pressure. It was a celebration of teamwork,
 							perseverance, and turning ideas into reality.
 						</p>
-						<img src='img/events/almaty/group.png' />
+						<img alt='' src='img/events/almaty/group.png' />
 					</div>
 					<div>
-						<img src='img/events/almaty/ftc.png' />
+						<img alt='' src='img/events/almaty/ftc.png' />
 						<p>
 							At the championship, we interacted with other talented teams,
 							exchanged ideas, and learned from their approaches. The inspiring
