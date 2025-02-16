@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import sliderItems from './data/sliderItems.json'
 import { Link, useNavigate } from 'react-router-dom'
-
+import './adaptive.scss'
 const PreviousButton = ({ onClick }) => (
 	<img
 		className='slick-prev custom-arrow'
@@ -38,7 +38,7 @@ const SliderComponent = ({handleItemClick }) => {
 		infinite: true, // Включаем бесконечный режим
 		speed: 1000,
 		slidesToShow: 3,
-		slidesToScroll: 1,
+		slidesToScroll: 2,
 		pauseOnHover: true,
 		centerMode: true,
 		centerPadding: '0px', // Убираем "отступы" по бокам
@@ -47,13 +47,14 @@ const SliderComponent = ({handleItemClick }) => {
 	return (
 		<Slider {...settings}>
 			{sliderItems.map(item => (
-				<img
-					alt=''
-					className='slider'
-					key={item.id}
-					src={item.url}
-					onClick={() => handleItemClick(item.id)}
-				/>
+				<div key={item.id}>
+					<img
+						alt=''
+						className='slider'
+						src={item.url}
+						onClick={() => handleItemClick(item.id)}
+					/>
+				</div>
 			))}
 		</Slider>
 	)
@@ -89,9 +90,25 @@ const Home = () => {
 	const events1 = useRef(null)
 	const events2 = useRef(null)
 	const events3 = useRef(null)
+	const ourteam1 = useRef(null)
+	const ourteam2 = useRef(null)
+	const ourteam3 = useRef(null)
 	const aboutUsRef1 = useRef(null)
 	const aboutUsRef2 = useRef(null)
-	const refs = [events1, events2, events3, aboutUsRef1, aboutUsRef2]
+	const sponsors1 = useRef(null)
+	const sponsors2 = useRef(null)
+	const refs = [
+		events1,
+		events2,
+		events3,
+		aboutUsRef1,
+		aboutUsRef2,
+		ourteam1,
+		ourteam2,
+		ourteam3,
+		sponsors1,
+		sponsors2
+	]
 	useEffect(() => {
 		const observer = new IntersectionObserver(
 			entries => {
@@ -131,6 +148,9 @@ const Home = () => {
 				</div>
 			</section>
 			<section className='events'>
+				<div className='background'>
+					<img src='img/background/1.png' />
+				</div>
 				{sliderItems.map(item => (
 					<div
 						className={`overlay ${
@@ -171,6 +191,9 @@ const Home = () => {
 			</section>
 			<div className='slice'></div>
 			<section className='aboutus'>
+				<div className='background'>
+					<img src='img/background/2.png' />
+				</div>
 				<article ref={aboutUsRef1}>
 					<h1>ABOUT US</h1>
 					<p>
@@ -240,34 +263,36 @@ const Home = () => {
 			</section>
 			<div className='slice'></div>
 			<section className='ourteam'>
-				<article>
+				<div className='background'>
+					<img src='img/background/1.png' />
+				</div>
+				<article ref={ourteam1}>
 					<h1>OUR TEAM</h1>
 					<p>
 						Our team consists 3 menots and 15 passionate members, who are
 						excited about the project and are working hard to make it a success.
 					</p>
 				</article>
-				<main>
+				<main ref={ourteam2}>
 					{arr.map(obj => (
 						<Card name={obj.name} photoUrl={obj.imageUrl} role={obj.role} />
 					))}
 				</main>
-				<button className='button'>
-					READ MORE 
-					<img width={55} alt='' src='img/events/barrow.svg' />
+				<button className='button' ref={ourteam3}>
+					Read More 
 				</button>
 			</section>
 			<div className='slice'></div>
-
 			<section className='sponsors'>
-				<article>
+				<article ref={sponsors1}>
 					<h1>Our Sponsors</h1>
 					<p>
-						We are grateful to our sponsors for supporting our mission and
-						helping us achieve our goals.
+						We are <span className='span'>grateful</span> to our sponsors for{' '}
+						<span className='span'>supporting</span> our mission and helping us
+						achieve our goals.
 					</p>
 				</article>
-				<div>
+				<div ref={sponsors2}>
 					<img src='img/sponsors/1.png' alt='' />
 					<img src='img/sponsors/2.png' alt='' />
 					<img src='img/sponsors/3.png' alt='' />
