@@ -4,7 +4,7 @@
             width: 100%;
             height: 300px;
             .slider{
-                width: 300px !important;
+                width: 300px ;
                 height: auto;
                 border-radius: 60px;
             }
@@ -186,7 +186,7 @@
         div{
             
             h1{
-                font-size:200px
+                font-size:180px
             }
         }
     }
@@ -195,7 +195,7 @@
             width: 100%;
             height: 250px;
             .slider{
-                width: 250px !important;
+                width: 250px ;
                 height: auto;
                 border-radius: 60px;
             }
@@ -240,6 +240,41 @@
     }
 }
 @media (max-width:768px) {
+    .header{
+      padding: 10px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      background-color: rgba(25, 29, 40, 1);
+
+      .nav{
+
+        .list {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          font-size: 15px;
+          font-weight: 350;
+          gap: 40px;
+
+          a {
+            text-decoration: none;
+          }
+      
+          img {
+            height: calc(97px / 1.8);
+            width: calc(75px / 1.8);
+          }
+      
+          a:hover{
+            transition: 0.2s;
+            color: rgba(219, 174, 70, 1);
+          }
+        }
+      }
+    }
+
     h1{
         font-size: 80px;
     }
@@ -251,10 +286,15 @@
             }
         }
     }
-    .slider-item{
-        
-        .slider{
-            width: 100px !important;
+    .events {
+        gap:50px;
+        .slider-item{
+            width: 100%;
+            height: 100%;
+            .slider{
+                transform: scale(0.7);
+                width: 180px ;
+            }
         }
     }
     .ourteam{
@@ -266,4 +306,25 @@
         display: none;
     }
     
+}
+
+@media (max-width:580px) {
+    .events {
+        gap:30px;
+        
+        .slider-container {
+
+            .slider{
+                gap:20px;
+                width: 290px ;
+    
+                .slider-item{
+                    width: 100%;
+        
+        
+                    
+                }
+            }
+        }
+    }
 }
