@@ -231,13 +231,6 @@ const Home = () => {
 								/>
 							</div>
 							<div className='footer-images'>
-								{/* <img
-									width={300}
-									height={170}
-									alt=''
-									src='img/aboutus/aside3.png'
-									style={{ objectFit: 'cover' }}
-								/> */}
 								<img
 									alt=''
 									src='img/aboutus/image (8) 1.png'

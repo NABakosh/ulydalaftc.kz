@@ -1,6 +1,6 @@
 const TeamCard = (props) => {
     return (
-			<div className='teampage-card'>
+			<div className={`teampage-card teampage-${props.id}`}>
 				<div>
 					<img src={props.img} alt='' />
 					<img className='oyu1' alt='' src='img/teampage/1.png' />

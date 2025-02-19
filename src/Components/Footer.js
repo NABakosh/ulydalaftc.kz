@@ -6,16 +6,20 @@ const Footer = () => {
 			<article>
 				<h2>Contact us</h2>
 				<p>
-					<img alt='Location' src='img/footer/location_on.png' className='location' />
+					<img
+						alt='Location'
+						src='img/footer/location_on.png'
+						className='location'
+					/>
 					Kazakhstan, Almaty, Gymnasium No. 140 named after Mukagali Makatayev
 				</p>
 				<p>
 					<img alt='Phone' src='img/footer/phone.png' />
-					Call us: +7 *** *** ****
+					Call us: +7 747 352 7515
 				</p>
 				<p>
 					<img alt='Mail' src='img/footer/mail.png' />
-					ulydalaprotech@gmail.com
+					ulydalapochta@juz40.com
 				</p>
 			</article>
 			<aside>

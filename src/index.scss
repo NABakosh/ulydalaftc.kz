@@ -100,9 +100,11 @@ body{
   align-items: center;
   width: 100%;
   background-color: rgba(25, 29, 40, 1);
-
+  .burger{
+    display: none;
+  }
   .nav{
-    
+    display: flex;
     .list {
       display: flex;
       justify-content: space-between;
@@ -116,8 +118,8 @@ body{
       }
   
       img {
-        height: calc(97px / 1.5);
-        width: calc(75px / 1.5);
+        height:97px;
+        width: 75px;
       }
   
       a:hover{
@@ -413,16 +415,16 @@ body{
     nav {
       display: flex;
       width: 670px;
-			text-align: justify;
+			text-align: center;
       flex-direction: column;
       align-items: center;
       gap: 50px;
 
       section {
         display: flex;
-        flex-direction: column;
         gap: 40px;
-
+        justify-content: center;
+        flex-wrap: wrap;
         div {
           display: flex;
           gap: 40px;
@@ -431,6 +433,7 @@ body{
             border-radius: 50px;
           }
         }
+        
       }
     }
   }
@@ -517,7 +520,11 @@ body{
   background-size: 45% auto;
   background-position: 50% 100%;
   article{
-    width: 1600px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
       h1{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -549,9 +556,13 @@ body{
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
       gap: 60px;
       div{
-        display: grid;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         gap: 20px;
       }
       nav{
@@ -563,7 +574,8 @@ body{
       }
      }
      .robotSideBar{
-      display: grid;
+      display: flex;
+      flex-direction: column;
       gap:44px;
       div{
         display: flex;
@@ -572,7 +584,7 @@ body{
       }
       p{
       font-size: 24px;
-      line-height: 0px;
+      text-align: center;
       }
      }
   }
@@ -632,7 +644,9 @@ body{
     }
   }
 }
-
+.all-events{
+  margin-top: 25px;
+}
 footer {
   padding: 40px 0px 80px 0px;
   width: 100%;
@@ -653,7 +667,6 @@ footer {
 
   article {
     margin-top: 100px;
-
     p {
       font-family: Inter;
       font-size: 24px;
@@ -695,10 +708,9 @@ footer {
 
 .teampage{
   h1{
-    margin-top: 20px;
     margin-bottom: 40px;
     font-size: 110px;
-    margin-left: 50px;
+    margin-left: 5px;
   }
   height: auto;
   width: 100%;
@@ -715,6 +727,16 @@ main{
   gap: 60px;
   flex-wrap: wrap;
 }
+.teampage-1{
+  img:first-child{
+    margin-bottom: -32px;
+  }
+}
+.teampage-9{
+   img:first-child{
+    margin-bottom: -35  px;
+  }
+}
 .teampage-card{
   display: flex;
   flex-direction: column;
@@ -730,10 +752,6 @@ main{
     justify-content: center;
     position: relative;
     background-color: rgba(11, 16, 28, 1);
-  }
-  img:first-child{
-    width: 264px;
-    height: 319px;
   }
   .oyu1,.oyu2{
     width: 179px;
@@ -797,13 +815,17 @@ main{
     justify-content: center;
     align-items: center;
     width: 80%;
+    gap: 40px;
     .normal{
       img{
         max-width: 350px;
+        border-radius: 60px;
       }
     }
     .reverse{
       img{
+        border-radius: 60px;
+
         max-width: 450px;
       }
     }
