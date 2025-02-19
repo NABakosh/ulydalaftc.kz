@@ -6,31 +6,12 @@ import 'slick-carousel/slick/slick-theme.css'
 import sliderItems from './data/sliderItems.json'
 import { Link, useNavigate } from 'react-router-dom'
 import './adaptive.scss'
-const PreviousButton = ({ onClick }) => (
-	<img
-		className='slick-prev custom-arrow'
-		onClick={onClick}
-		src='/img/events/arrowl.svg'
-		alt='Previous'
-	/>
-)
-
-const NextButton = ({ onClick }) => (
-	<img
-		className='custom-arrow slick-next'
-		onClick={onClick}
-		src='/img/events/arrowr.svg'
-		alt='Next'
-	/>
-)
 
 
 
 const SliderComponent = ({handleItemClick }) => {
 
 	const settings = {
-		prevArrow: <PreviousButton />,
-		nextArrow: <NextButton />,
 		draggable: true,
 		autoplay: true,
 		autoplaySpeed: 2000,
@@ -42,6 +23,14 @@ const SliderComponent = ({handleItemClick }) => {
 		pauseOnHover: true,
 		centerMode: true,
 		centerPadding: '0px', // Убираем "отступы" по бокам
+		responsive: [
+			{
+				breakpoint: 500,
+				settings:{
+					dots:true,
+				}
+			}
+		]
 	}
  	
 	return (
@@ -147,7 +136,7 @@ const Home = () => {
 					<h1>Uly Dala</h1>
 				</div>
 			</section>
-			<section className='events'>
+			<section className={`events ${selectedId ? 'open' : ''}`}>
 				<div className='background'>
 					<img src='img/background/1.png' />
 				</div>
@@ -230,7 +219,7 @@ const Home = () => {
 									width={300}
 									alt=''
 									height={170}
-									src='img/aboutus/aside1.png'
+									src='img/aboutus/aside3.png'
 									style={{ objectFit: 'cover' }}
 								/>
 								<img
@@ -291,12 +280,24 @@ const Home = () => {
 					</p>
 				</article>
 				<div ref={sponsors2}>
-					<img src='img/sponsors/1.png' alt='' />
-					<img src='img/sponsors/2.png' alt='' />
-					<img src='img/sponsors/3.png' alt='' />
-					<img src='img/sponsors/4.png' alt='' />
-					<img src='img/sponsors/5.png' alt='' />
-					<img src='img/sponsors/6.png' alt='' />
+					<a href='https://www.instagram.com/explore/locations/802558641/skola-gimnazia-140-im-m-makataeva/'>
+						<img src='img/sponsors/1.png' alt='' />
+					</a>
+					<a href='https://farabi.university/'>
+						<img src='img/sponsors/2.png' alt='' />
+					</a>
+					<a href='http://damutech.kz/'>
+						<img src='img/sponsors/3.png' alt='' />
+					</a>
+					<a href='http://almaty.daryny.kz/'>
+						<img src='img/sponsors/4.png' alt='' />
+					</a>
+					<a href=''>
+						<img src='img/sponsors/5.png' alt='' />
+					</a>
+					<a href='https://metu.edu.kz/'>
+						<img src='img/sponsors/6.png' alt='' />
+					</a>
 				</div>
 			</section>
 		</>

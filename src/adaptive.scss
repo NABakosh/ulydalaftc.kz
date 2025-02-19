@@ -140,6 +140,29 @@
 			width: 80%;
 		}
 	}
+    .eventspage{
+        .event-title{
+            font-size: 50px;
+        }
+        article{
+            div{
+    width: 450px;
+      flex-wrap: wrap;
+      padding-bottom: 40px;
+            }
+            .normal{
+      p{
+        max-width: 500px;
+      }
+    }
+    .reverse{
+      p{
+        max-width: 500px;
+      }
+    }
+        }
+    }
+    
 }
 @media (max-width: 1260px) {
 	h1 {
@@ -175,6 +198,49 @@
 			}
 		}
 	}
+    .events{
+        .overlay{
+            main{
+                width: 700px;
+                h1{
+                    font-size: 40px;
+                }
+                article{
+                    width: 600px;
+                    aside{
+                        p{
+                        font-size: 20px;
+                        }
+                        img{
+                            height: 220px;
+                        }
+                    }
+                    h1{
+                        font-size: 50px;
+                        text-align: center;
+                    }
+                    p{
+                        width: 600px;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        article{
+            width: 80%;
+            h2{
+                text-align: center;
+            }
+        }
+        aside{
+            gap: 20px;
+        }
+    }
 }
 @media (max-width: 1024px) {
 	h1 {
@@ -234,8 +300,14 @@
 			}
 		}
 	}
+    .location{
+  margin-top: -50px;
+}
 }
 @media (max-width: 768px) {
+    .aboutus{
+        gap: -100px !important;
+    }
 	.header {
 		padding: 10px 0px;
 		display: flex;
@@ -269,6 +341,37 @@
 			}
 		}
 	}
+
+    h1{
+        font-size: 80px;
+    }
+    .home{
+        div{
+
+            h1{
+                font-size:100px
+            }
+        }
+    }
+    .events {
+        gap:50px;
+        .slider-item{
+            width: 100%;
+            height: 100%;
+            .slider{
+                transform: scale(0.9);
+                width: 270px  !important;
+            }
+        }
+    }
+    .ourteam{
+        article{
+            width: 100%;
+        }
+    }
+    .background{
+        display: none;
+    }
 
 	h1 {
 		font-size: 80px;
@@ -368,6 +471,47 @@
 	.background {
 		display: none;
 	}
+    .eventspage{
+        .event-title{
+            font-size: 40px;
+        }
+    }
+    .events{
+        .overlay{
+            main{
+                width: 600px;
+                h1{
+                    font-size: 40px;
+                }
+                article{
+                    width: 500px;
+                    aside{
+                        p{
+                        font-size: 20px;
+                        display: block;
+                        }
+                        img{
+                            height: 220px;
+                        }
+                    }
+                    h1{
+                        font-size: 50px;
+                        text-align: center;
+                    }
+                    p{
+                        width: 600px;
+                        font-size: 20px;
+                        display: none;
+                    }
+                }
+                button{
+                    width: 250px;
+                    height: 75px;
+                    font-size: 25px;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 750px) {
@@ -391,7 +535,6 @@
 		position: relative;
 		width: 100%;
 		justify-content: center;
-		gap: 100px;
 		align-items: center;
 		background-color: rgba(25, 29, 40, 1);
 
@@ -463,6 +606,9 @@
 					}
 					
 					.footer-images {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
 						img {
 							width: 100%;
 							border-radius: 0px;
@@ -473,6 +619,49 @@
 			}
 		}
 	}
+    .events.open{
+        padding: 200px 00px;
+    }
+    .events{
+        .overlay{
+            main{
+                article{
+                    aside{
+                        display: flex;
+                        flex-wrap: wrap-reverse;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:650px) {
+    .events {
+		gap: 50px;
+		.slider-item {
+			width: 100%;
+			height: 100%;
+			.slider {
+				transform: scale(0.7);
+				width: 200px !important;
+			}
+		}
+	}
+    .events{
+        .overlay{
+            main{
+                h1{
+                    font-size: 30px;
+                }
+                article{
+                }
+                button{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
 }
 @media (max-width: 490px) {
 	.events {
@@ -588,4 +777,31 @@
 			}
 		}
 	}
+    .eventspage{
+        .event-title{
+            font-size: 40px;
+        }
+    }
+    .events{
+        .overlay{
+            main{
+                width: 100%;
+                gap: 0;
+                h1{
+                    font-size: 30px;
+                }
+                article{
+                    width: 400px;
+                }
+                button{
+                    scale: 0.7;
+                }
+            }
+        }
+    }
+}
+@media (max-width:450px) {
+    .location{
+  margin-top: -100px;
+}
 }

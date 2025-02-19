@@ -4,7 +4,7 @@
 		"title": "Ruh Marathon",
 		"data": [
 			{
-                "id" : "a1",
+				"id": "a1",
 				"url": "/img/events/ruhMarathon/1.png",
 				"text": "At the start of the season, our team organized the “Ruh Marathon” Sportakiada at our school to inspire students to embrace both sports and robotics. This event was designed to highlight the importance of teamwork, perseverance, and physical activity—values that are crucial in both fields. The event brought together junior high school students who participated in a series of sports tasks, including relay races, team-building challenges, and other physical activities. The idea behind these tasks was to encourage students to work together, just like in robotics, where collaboration is essential for success. We wanted to show that the same qualities—discipline, communication, and dedication—apply in both sports and robotics."
 			},
@@ -25,16 +25,18 @@
 		"title": "SDU stem week",
 		"data": [
 			{
-                "id":"b1",
-				"url": "",
+				"id": "b1",
+				"url": "/img/events/sdu/1.png",
 				"text": "At the start of the 2024-2025 season, our robotics team participated in SDU STEM Week, a vibrant event celebrating technology and innovation. We presented our FTC robot, introducing the world of robotics to university professors, students, and STEM enthusiasts. It was an inspiring experience that allowed us to share our passion while learning from others and broadening our perspectives."
 			},
 			{
-				"url": "",
+				"id": "b2",
+				"url": "/img/events/sdu/2.png",
 				"text": "Throughout the event, we guided visitors through the process of designing, building, and programming a robot for the FTC competition. We shared the challenges we faced, the solutions we developed, and how teamwork plays a central role in every robotics project. Our robot’s autonomous features were a key highlight as we demonstrated how it navigates obstacles and performs complex tasks using sensors and precise programming techniques. The detailed questions from students and professors pushed us to reflect on our progress and reinforced our understanding of robotics."
 			},
 			{
-				"url": "",
+				"id": "b3",
+				"url": "/img/events/sdu/3.png",
 				"text": "One of the most rewarding parts of the event was connecting with university students and professors. We met many students curious about robotics and eager to get involved in similar projects. Their enthusiasm was inspiring, and we enjoyed sharing advice and encouraging them to explore STEM. Several professors provided valuable feedback on our robot, offering insights that sparked ideas for future improvements and projects. This experience reminded us of the importance of outreach and collaboration in STEM. Beyond competitions, robotics is about building a community and inspiring the next generation of innovators. Participating in SDU STEM Week left us motivated to continue growing, improving, and sharing our journey with others."
 			}
 		]
@@ -42,82 +44,185 @@
 	{
 		"id": "3",
 		"title": "Website Workshop",
-		"url": "img/events/events3.png",
-		"url2": "img/events/events3.png",
-		"text": "",
-		"text2": "",
-		"text3": ""
+		"data": [
+			{
+				"id": "c1",
+				"url": "/img/events/website/1.png",
+				"text": "Our team organized a workshop at the local community center, where we introduced 30 enthusiastic participants to the basics of web development. The goal of the workshop was to empower them with the skills to create their first website and spark their interest in technology. It was an exciting and rewarding experience, both for the attendees and for us as mentors. The workshop kicked off with an introduction to web development, covering key concepts like HTML, CSS, and basic website structure. We wanted to ensure that even those with no prior experience felt comfortable and confident in learning these skills. We walked them through the process step by step—starting with setting up their first web page, adding content, and styling it to reflect their personal creativity."
+			},
+			{
+				"id": "c2",
+				"url": "/img/events/website/2.png",
+				"text": "To keep things engaging, we made the workshop interactive. After a brief explanation of each concept, participants immediately applied what they had learned by coding their own websites. By the end of the session, every participant had built their very first website! Some created personal blogs, while others experimented with portfolios or informational pages about topics they were passionate about. Our team provided hands-on assistance, helping with technical challenges and answering questions along the way. It was inspiring to see how excited everyone was when they saw their ideas come to life on the screen. Many of them expressed how they had always found technology intimidating but now felt confident to explore it further."
+			},
+			{
+				"id": "c3",
+				"url": "/img/events/website/3.png",
+				"text": "For us, this workshop was a reminder of how small steps can lead to big changes. Helping others take their first steps into web development was deeply fulfilling. It reinforced our belief in the importance of sharing knowledge and encouraging more people to explore the world of technology. We left the workshop feeling inspired, knowing that we had helped spark curiosity and creativity in others, and we can’t wait to organize more events like this in the future."
+			}
+		]
 	},
 	{
 		"id": "4",
 		"title": "Almaty Regional Championship",
-		"url": "img/events/events4.png",
-		"url2": "img/events/events4.png",
-		"text": "",
-		"text2": "",
-		"text3": ""
+		"data": [
+			{
+				"id": "d1",
+				"url": "/img/events/almatyreg/1.png",
+				"text": "The Almaty Regional First Championship marked a milestone for our team as our first FTC competition. It was a memorable experience where we won our very first Inspire Award. Beyond the victory, this event introduced us to the vibrant world of robotics competitions, where we connected with many talented teams, tested our robot in real conditions, and learned valuable lessons. The experience fueled our passion for robotics and inspired us to push our skills to the next level."
+			}
+		]
 	},
 	{
 		"id": "5",
 		"title": "Mangystau First Championship",
-		"url": "img/events/events5.png",
-		"url2": "img/events/events5.png",
-		"text": "",
-		"text2": "",
-		"text3": ""
+		"data": [
+			{
+				"id": "e1",
+				"url": "/img/events/magys/1.png",
+				"text": "Our team participated in the Mangystau Regional First Championship in Aktau, an incredible competition that brought together talented teams from across the region. The event was intense yet inspiring, filled with challenges, learning experiences, and new connections. One of the proudest moments for us was receiving the 2nd place Inspire Award, which recognized not only our robot’s performance but also our team’s spirit, creativity, and community involvement."
+			},
+			{
+				"id": "e2",
+				"url": "/img/events/magys/2.png",
+				"text": "The competition was tough, but it pushed us to improve both our technical skills and teamwork. Every match tested our robot’s abilities and our strategies, but we stayed focused and adapted quickly. Beyond the matches, the competition provided a great opportunity to engage with other teams, share ideas, and learn from their experiences. We exchanged tips on building and programming, as well as advice on improving our outreach initiatives. One of the best parts of the championship was the community we became part of. We connected with teams from different cities and regions, and many of these connections will continue beyond the event. It was inspiring to see how passionate and hardworking everyone was, motivating us to aim even higher in the future. "
+			},
+			{
+				"id": "e3",
+				"url": "/img/events/magys/3.png",
+				"text": "The Mangystau Regional First Championship left us with valuable memories, new friends, and a stronger desire to grow and contribute to the robotics community. Winning the Inspire Award 2nd place was a great honor, but the experience and connections we gained were even more meaningful. We are excited for what’s next and can’t wait to apply everything we learned as we prepare for future challenges!"
+			}
+		]
 	},
 	{
 		"id": "6",
 		"title": "Visit to nursing home",
-		"url": "img/events/events6.png",
-		"url2": "img/events/events6.png",
-		"text": "",
-		"text2": "",
-		"text3": ""
+		"data": [
+			{
+				"id": "f1",
+				"url": "/img/events/visit/1.png",
+				"text": "Our team recently had the privilege of visiting a nursing home, where we spent an inspiring day connecting with seniors, sharing our talents, and introducing them to the exciting world of technology. To make the day special, we organized a concert filled with music and performances, creating a warm, joyful atmosphere. It was heartwarming to see the smiles on their faces as they clapped along and enjoyed the show. The concert helped us break the ice and build a bond with the residents, making them feel appreciated and loved. "
+			},
+			{
+				"id": "f2",
+				"url": "/img/events/visit/2.png",
+				"text": "After the concert, we introduced our robot, demonstrating its movements and explaining how it works. The seniors were genuinely curious, asking thoughtful questions about robotics and how technology is evolving. We took the opportunity to share some of the latest technological innovations and how robotics is transforming industries and daily life. Their enthusiasm and willingness to learn left a lasting impression on us. It was a beautiful moment where generations came together through a shared curiosity for something new."
+			},
+			{
+				"id": "f3",
+				"url": "/img/events/visit/3.png",
+				"text": "For our team, this experience went far beyond just showcasing our work. It reminded us of the importance of human connection and the power of technology to bring people closer. The stories and life advice we received from the seniors were truly invaluable, inspiring us to continue giving back to our community in meaningful ways. We left the nursing home with a renewed sense of purpose, knowing that even small efforts can make a big difference in someone’s life."
+			}
+		]
 	},
 	{
 		"id": "7",
 		"title": "Robotek Grand Tournament",
-		"url": "img/events/events7.png",
-		"url2": "img/events/events7.png",
-		"text": "",
-		"text2": "",
-		"text3": ""
+		"data": [
+			{
+				"id": "g1",
+				"url": "/img/events/robotek/1.png",
+				"text": " Our team recently organized the “Robotek Grand Tournament”, a large-scale robotics competition for younger categories. The event attracted 236 participants from 118 teams, all eager to demonstrate their creativity and problem-solving skills. This tournament was made possible thanks to the invaluable support of our sponsor, “Almaty Daryny”, who helped us turn this ambitious idea into reality. During the competition, our team was responsible for ensuring that everything ran smoothly. We provided technical support to the teams, assisted with robot maintenance, and guided participants through the challenges they encountered. It was inspiring to see how determined and passionate these young innovators were, constantly learning and improving their designs with each round. We also organized interactive sessions to share our experiences and motivate them to keep exploring robotics."
+			},
+			{
+				"id": "g2",
+				"url": "/img/events/robotek/2.png",
+				"text": "One of the most rewarding aspects of the tournament was seeing the collaboration and teamwork among the participants. Many of them were new to robotics, but their curiosity and enthusiasm were undeniable. For us, it was a great reminder of how exciting this journey can be at every stage. The Grand Robotek Tournament wasn’t just about competition; it was about building a supportive community of young robotics enthusiasts. We connected with many talented teams and coaches, exchanging ideas and creating a network that we believe will lead to new opportunities for collaboration in the future."
+			},
+			{
+				"id": "g3",
+				"url": "/img/events/robotek/3.png",
+				"text": "This experience strengthened our commitment to promoting robotics education and inspired us to continue organizing similar events. Encouraging others to step into the world of technology is something we deeply value, and we hope that events like this will help shape the next generation of innovators."
+			}
+		]
 	},
 	{
 		"id": "8",
 		"title": "Alem Championship",
-		"url": "img/events/events8.png",
-		"url2": "img/events/events8.png",
-		"text": "",
-		"text2": "",
-		"text3": ""
+		"data": [
+			{
+				"id": "h1",
+				"url": "/img/events/alem/1.png",
+				"text": "Our team had the incredible opportunity to participate in the “Alem Championship”, which proved to be a valuable and unforgettable experience. Competing alongside some of the most talented teams in Kazakhstan pushed us to grow, adapt, and refine both our robot and strategy. This championship wasn’t just about winning; it was a chance to test our skills, learn from others, and further develop our teamwork and problem-solving abilities."
+			},
+			{
+				"id": "h2",
+				"url": "/img/events/alem/2.png",
+				"text": " One of the highlights was being in an alliance with Kiroshi, Point, and Uran 92—some of the strongest teams in Kazakhstan. Collaborating with them was an inspiring experience, as we learned from their unique approaches and innovative solutions. Working together during matches helped us sharpen our strategies and deepen our understanding of effective teamwork. These interactions opened up new perspectives and gave us fresh ideas for improving our own performance in future competitions."
+			},
+			{
+				"id": "h3",
+				"url": "/img/events/alem/3.png",
+				"text": "Throughout the event, we faced numerous challenges that required quick thinking and collaboration. Whether it was making last-minute adjustments to our robot or analyzing our opponents’ strategies, every moment taught us something new. Our perseverance and adaptability paid off, and we delivered a strong performance while earning recognition for our efforts."
+			},
+			{
+				"id": "h4",
+				"url": "/img/events/alem/4.png",
+				"text": "The “Alem Championship” was more than just a competition—it was a celebration of innovation, creativity, and teamwork. We returned home with renewed motivation, eager to apply the lessons learned and continue pushing the boundaries of what we can achieve in robotics. This experience also strengthened our passion for technology and reinforced our belief in its power to bring people together. We’re truly grateful for the opportunity and look forward to participating in more events like this in the future."
+			}
+		]
 	},
 	{
 		"id": "9",
 		"title": "Digital Almaty",
-		"url": "img/events/events9.png",
-		"url2": "img/events/events9.png",
-		"text": "",
-		"text2": "",
-		"text3": ""
+		"data": [
+			{
+				"id": "k1",
+				"url": "/img/events/digital/1.png",
+				"text": " Our robotics team had the incredible opportunity to participate in “Digital Almaty,” one of the largest tech events in Central Asia. This annual event brings together global leaders, innovators, and tech enthusiasts to discuss the latest trends in digital transformation, artificial intelligence, and technological advancements. For us, it was a unique experience to showcase our achievements and learn from industry experts.  "
+			},
+			{
+				"id": "k2",
+				"url": "/img/events/digital/2.png",
+				"text": "During the event, we presented our FTC robot, demonstrating its capabilities and explaining the design and programming process behind it. Visitors were curious about how we built the robot and how it performs tasks autonomously. We shared insights into our journey as a robotics team, emphasizing teamwork, problem-solving, and the challenges we overcame while preparing for competitions. Interacting with professionals and other innovators at “Digital Almaty” was inspiring and eye-opening. We had the chance to meet experts in various fields, from AI specialists to startup founders, who offered valuable advice on how robotics could evolve and play a bigger role in the future. The discussions also highlighted the importance of integrating robotics into different industries to solve real-world problems in Kazakhstan and beyond. "
+			},
+			{
+				"id": "k3",
+				"url": "/img/events/digital/3.png",
+				"text": "What made the event even more meaningful was the opportunity to connect with younger students and introduce them to robotics. Seeing their excitement and curiosity reminded us of the importance of inspiring the next generation of innovators. We were proud to contribute to this vibrant tech community and left the event motivated to keep pushing boundaries in our own projects.  "
+			}
+		]
 	},
 	{
 		"id": "10",
 		"title": "Uly Dala Fest",
-		"url": "img/events/events10.png",
-		"url2": "img/events/events10.png",
-		"text": "",
-		"text2": "",
-		"text3": ""
+		"data": [
+			{
+				"id": "l1",
+				"url": "/img/events/ulyfest/1.png",
+				"text": "One of the biggest events our team hosted was “RobotX x Upgrade,” which brought together over 60 teams from younger categories. This large-scale event provided a fantastic platform for participants to showcase their skills and creativity in robotics. Our goal was not only to organize an exciting competition but also to foster a supportive learning environment for aspiring young engineers.  “RobotX x Upgrade” took place at our school, 140 Gymnasium, which added a special meaning to the event for us. The familiar environment made it feel like we were inviting everyone into our home to share our passion for robotics. The event was filled with energy, creativity, and collaboration, as young participants tackled different challenges and impressed us with their innovative solutions."
+			},
+			{
+				"id": "l2",
+				"url": "/img/events/ulyfest/2.png",
+				"text": " As part of this event, we conducted a masterclass for the mentors of these teams. During the session, we shared essential information about FTC (First Tech Challenge) and provided practical advice on how they could integrate their students into FLL (First Lego League) or FTC programs. We explained the key differences between the categories, demonstrated successful practices, and offered tips on effective preparation for robotics competitions. Seeing how engaged and eager the mentors were to bring these ideas back to their teams was truly rewarding."
+			},
+			{
+				"id": "l3",
+				"url": "/img/events/ulyfest/3.png",
+				"text": "Hosting this event and interacting with so many talented students and mentors was a valuable experience for our team. It allowed us to reflect on our own journey and how much we’ve grown in robotics over the years. More importantly, it gave us the chance to inspire the next generation of innovators. We’re excited to see"
+			}
+		]
 	},
 	{
 		"id": "11",
 		"title": "Daryn First Championship:",
-		"url": "img/events/events11.png",
-		"url2": "img/events/events11.png",
-		"text": "",
-		"text2": "",
-		"text3": ""
+		"data": [
+			{
+				"id": "m1",
+				"url": "/img/events/daryn/1.png",
+				"text": "The Daryn First Championship was one of the most exciting and competitive events in our robotics journey. This regional competition gathered numerous teams from across the country, creating a lively and inspiring atmosphere. It gave us the chance to test our robot, exchange ideas with other teams, and learn from their experiences."
+			},
+			{
+				"id": "m2",
+				"url": "/img/events/daryn/2.png",
+				"text": "At this event, we proudly won the Think Award Winners, recognizing our strong engineering documentation and deep understanding of the design process. This award was a testament to the hard work and dedication we put into perfecting our engineering notebook and refining our robot. It motivated us to keep improving and striving for even greater achievements."
+			},
+			{
+				"id": "m3",
+				"url": "/img/events/daryn/3.png",
+				"text": "More than just a competition, the Daryn First Championship was a valuable learning experience. We faced new challenges that pushed us to think creatively and solve problems under pressure. Collaborating with other teams and seeing their innovative solutions broadened our perspective and strengthened our passion for robotics."
+			}
+		]
 	}
 ]

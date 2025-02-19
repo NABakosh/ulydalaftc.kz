@@ -13,7 +13,7 @@ const LoadingScreen = () => {
 	return (
 		<div className={`loading-screen ${hide ? 'hide' : ''}`}>
 			<div className='container'>
-				<img src='img/arqar.png' alt='Arqar' className='arqar' />
+				<img src='/img/arqar.png' alt='Arqar' className='arqar' />
 			</div>
 		</div>
 	)

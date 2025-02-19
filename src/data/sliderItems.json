@@ -4,8 +4,8 @@
 		"title": "Ruh Marathon",
 		"url": "img/events/events1.png",
 		"url2": "img/events/events1.png",
-		"text": "At the start of the 2024–2025 season, our team organized the Ruh Marathon, a unique sportakiada combining sports and robotics. Junior high school students participated in various sporting challenges aimed at promoting an active lifestyle alongside fostering interest in STEM.",
-		"text2": "This event brought energy and excitement to our school community, encouraging students to engage in physical activities while sparking curiosity about robotics. It was a great way to start the season with a balance of fun and learning."
+		"text": "At the start of the 2024–2025 season, our team organized the Ruh Marathon, a unique sportakiada combining sports and robotics. Junior high school students participated in various sporting challenges aimed at promoting an active lifestyle alongside fostering interest in STEM. This event brought energy and excitement to our school community,",
+		"text2": "Encouraging students to engage in physical activities while sparking curiosity about robotics. It was a great way to start the season with a balance of fun and learning."
 	},
 	{
 		"id": 2,
@@ -36,16 +36,16 @@
 		"title": "Mangystau First Championship",
 		"url": "img/events/events5.png",
 		"url2": "img/events/events5.png",
-		"text": "Our participation in the Mangystau Regional First Championship was a pivotal moment in our journey. Held in Aktau, the event allowed us to test our skills against strong teams and collaborate with like-minded peers. Winning the second-place Inspire Award was a proud achievement for our team.",
-		"text2": "We also made meaningful connections with other teams, including some of the most experienced in the country, which helped us grow and broaden our understanding of robotics and teamwork."
+		"text": "Our participation in the Mangystau Regional First Championship was a pivotal moment in our journey. Held in Aktau, the event allowed us to test our skills against strong teams and collaborate with like-minded peers. Winning the second-place Inspire Award was a proud achievement for our team. We also made meaningful connections with other teams, ",
+		"text2": "Including some of the most experienced in the country, which helped us grow and broaden our understanding of robotics and teamwork."
 	},
 	{
 		"id": "6",
 		"title": "Visit to nursing home",
 		"url": "/img/events/events6.png",
 		"url2": "img/events/events6.png",
-		"text": "Giving back to the community is an essential part of our team’s mission. We visited a local nursing home, where we organized a concert for the residents and shared technological updates with them. Demonstrating our robot brought smiles and curiosity, making it a truly heartwarming experience. ",
-		"text2": "We cherished the opportunity to engage with the seniors, hear their stories, and bring a touch of innovation to their day. This event reminded us of the power of connection through technology."
+		"text": "Giving back to the community is an essential part of our team’s mission. We visited a local nursing home, where we organized a concert for the residents and shared technological updates with them. Demonstrating our robot brought smiles and curiosity, making it a truly heartwarming experience. We cherished the opportunity to engage with the seniors, ",
+		"text2": "Hear their stories, and bring a touch of innovation to their day. This event reminded us of the power of connection through technology."
 	},
 	{
 		"id": 7,
@@ -81,7 +81,7 @@
 	},
 	{
 		"id": 11,
-		"title": "Daryn First Championship:",
+		"title": "Daryn First Championship",
 		"url": "img/events/events11.png",
 		"url2": "img/events/events11.png",
 		"text": "The Daryn First Championship was an exciting regional competition featuring many talented teams from across the country. Our team had the honor of participating in this large-scale event, where we competed, learned, and grew together. The highlight was winning the Think Award, recognizing our strong engineering documentation and design process",
