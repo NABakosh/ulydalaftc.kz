@@ -5,16 +5,18 @@
 		"data": [
 			{
                 "id" : "a1",
-				"url": "/img/events/events1.png",
+				"url": "/img/events/ruhMarathon/1.png",
 				"text": "At the start of the season, our team organized the “Ruh Marathon” Sportakiada at our school to inspire students to embrace both sports and robotics. This event was designed to highlight the importance of teamwork, perseverance, and physical activity—values that are crucial in both fields. The event brought together junior high school students who participated in a series of sports tasks, including relay races, team-building challenges, and other physical activities. The idea behind these tasks was to encourage students to work together, just like in robotics, where collaboration is essential for success. We wanted to show that the same qualities—discipline, communication, and dedication—apply in both sports and robotics."
 			},
 			{
-				"url": "/img/events/events2.png",
-				"text": "Второй текст"
+				"id": "a2",
+				"url": "/img/events/ruhMarathon/2.png",
+				"text": "Throughout the event, students were not only encouraged to compete but also to support one another, fostering a spirit of camaraderie and unity. It was a fun and energizing experience that reinforced the connection between physical activity and mental agility, both of which are important for developing innovative solutions in robotics."
 			},
 			{
-				"url": "/img/events/events3.png",
-				"text": "Третий текст"
+				"id": "a3",
+				"url": "/img/events/ruhMarathon/3.png",
+				"text": "By the end of the day, it was clear that the “Ruh Marathon” was more than just a sports event. It served as a reminder of the power of teamwork, determination, and balance between mind and body. The students left with a renewed sense of motivation and a deeper understanding of how to apply these qualities to both their academic and extracurricular pursuits. This event set a positive tone for the season and reminded everyone that sports and robotics can work together to create well-rounded individuals."
 			}
 		]
 	},
@@ -25,15 +27,15 @@
 			{
                 "id":"b1",
 				"url": "",
-				"text": ""
+				"text": "At the start of the 2024-2025 season, our robotics team participated in SDU STEM Week, a vibrant event celebrating technology and innovation. We presented our FTC robot, introducing the world of robotics to university professors, students, and STEM enthusiasts. It was an inspiring experience that allowed us to share our passion while learning from others and broadening our perspectives."
 			},
 			{
 				"url": "",
-				"text": ""
+				"text": "Throughout the event, we guided visitors through the process of designing, building, and programming a robot for the FTC competition. We shared the challenges we faced, the solutions we developed, and how teamwork plays a central role in every robotics project. Our robot’s autonomous features were a key highlight as we demonstrated how it navigates obstacles and performs complex tasks using sensors and precise programming techniques. The detailed questions from students and professors pushed us to reflect on our progress and reinforced our understanding of robotics."
 			},
 			{
 				"url": "",
-				"text": ""
+				"text": "One of the most rewarding parts of the event was connecting with university students and professors. We met many students curious about robotics and eager to get involved in similar projects. Their enthusiasm was inspiring, and we enjoyed sharing advice and encouraging them to explore STEM. Several professors provided valuable feedback on our robot, offering insights that sparked ideas for future improvements and projects. This experience reminded us of the importance of outreach and collaboration in STEM. Beyond competitions, robotics is about building a community and inspiring the next generation of innovators. Participating in SDU STEM Week left us motivated to continue growing, improving, and sharing our journey with others."
 			}
 		]
 	},

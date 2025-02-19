@@ -124,7 +124,7 @@ const Home = () => {
 	}, [])
 
 	const arr = [
-		{
+		{	
 			imageUrl: 'img/ourteam/team1.png',
 			name: 'Zangar',
 			role: 'mentor',
