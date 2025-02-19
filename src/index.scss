@@ -310,18 +310,18 @@ body{
     transform: translateX(-100px);
     transition: all 1.2s ease-out;
   }
-  .slider {
-    margin: 0 auto;
-    border-radius: 8px;
-    transform: scale(0.8);
-    border-radius: 100px;
-    box-shadow: 0 8px 16px #0000004b, 
-    0 4px 8px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    .slider-item {
-      width: 100%;
-      height: 450px;
-    }
+  .slider-item {
+    width: 100%;
+    height: 450px;
+    .slider {
+      margin: 0 auto;
+      border-radius: 8px;
+      transform: scale(0.8);
+      border-radius: 100px;
+      box-shadow: 0 8px 16px #0000004b, 
+      0 4px 8px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
   }
   .seeAll{
     margin-top: 50px;
@@ -368,7 +368,9 @@ body{
     position: absolute;
   }
   h1{
-      margin-bottom: 2  0px;
+    text-align: center;
+
+    margin-bottom: 2  0px;
   }
   article,
   aside {
@@ -385,7 +387,7 @@ body{
     transform: translateX(-100px);
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align: justify;
     width: 70%;
     gap: 20px;
 
@@ -395,8 +397,8 @@ body{
   }
 
   aside {
-    -size: 20px;
-    transform: translateX(100px);
+    font-size: 20px;
+    transform: translateX(-100px);
     width: 80%;
     display: flex;
     flex-wrap: wrap;
@@ -405,14 +407,14 @@ body{
     main {
       display: flex;
       width: 670px;
-      text-align: center;
+			text-align: justify;
       gap: 45px;
     }
 
     nav {
       display: flex;
       width: 670px;
-      text-align: center;
+			text-align: justify;
       flex-direction: column;
       align-items: center;
       gap: 50px;
@@ -589,8 +591,10 @@ body{
   flex-direction: column;
   justify-content: center;
   gap:70px;
+  
   h1{
-    line-height: 1.5;
+    margin-bottom: 15px;
+    line-height: 1;
   }
   .show{
     opacity: 1;

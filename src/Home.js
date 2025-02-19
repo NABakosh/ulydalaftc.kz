@@ -116,7 +116,7 @@ const Home = () => {
 					entry.target.classList.toggle('show', entry.isIntersecting)
 				})
 			},
-			{ threshold: 0.4 }
+			{ threshold: 0.2 }
 		)
 
 		refs.forEach(ref => ref.current && observer.observe(ref.current))
@@ -217,6 +217,13 @@ const Home = () => {
 						</p>
 					</main>
 					<nav>
+						<p>
+							This website serves as a platform to showcase our robotics
+							journey, highlight our projects and designs, and connect with the
+							broader FTC community. It reflects our commitment to innovation
+							and learning as we continuously grow, compete, and contribute to
+							the future of STEM.
+						</p>
 						<section>
 							<div>
 								<img
@@ -234,30 +241,21 @@ const Home = () => {
 									style={{ objectFit: 'cover' }}
 								/>
 							</div>
-							<div>
-								<img
+							<div className='footer-images'>
+								{/* <img
 									width={300}
 									height={170}
 									alt=''
 									src='img/aboutus/aside3.png'
 									style={{ objectFit: 'cover' }}
-								/>
+								/> */}
 								<img
-									width={300}
-									height={170}
 									alt=''
-									src='img/aboutus/aside4.png'
+									src='img/aboutus/image (8) 1.png'
 									style={{ objectFit: 'cover' }}
 								/>
 							</div>
 						</section>
-						<p>
-							This website serves as a platform to showcase our robotics
-							journey, highlight our projects and designs, and connect with the
-							broader FTC community. It reflects our commitment to innovation
-							and learning as we continuously grow, compete, and contribute to
-							the future of STEM.
-						</p>
 					</nav>
 				</aside>
 			</section>
