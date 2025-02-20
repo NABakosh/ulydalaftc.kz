@@ -264,7 +264,6 @@
         }
         article{
             div{
-    width: 450px;
       flex-wrap: wrap;
       padding-bottom: 40px;
             }
@@ -940,6 +939,13 @@
         .event-title{
             font-size: 40px;
         }
+		article{
+			div{
+				img{
+					width: 250px;
+				}
+			}
+		}
     }
     .events{
         .overlay{

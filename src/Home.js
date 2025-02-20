@@ -258,9 +258,11 @@ const Home = () => {
 						<Card name={obj.name} photoUrl={obj.imageUrl} role={obj.role} />
 					))}
 				</main>
-				<button className='button' ref={ourteam3}>
-					Read More 
-				</button>
+				<Link to="/team">
+  <button className='button' ref={ourteam3}>
+    Read More
+  </button>
+</Link>
 			</section>
 			<div className='slice'></div>
 			<section className='sponsors'>
