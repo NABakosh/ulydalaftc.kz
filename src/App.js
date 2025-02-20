@@ -14,11 +14,14 @@ function App() {
 	const [loading, setLoading] = useState(true)
 
 	useEffect(() => {
-		// Закрытие экрана после полной загрузки контента
+		// Закрытие экрана после полной загрузки контента с задержкой 2 секунды
 		window.onload = () => {
-			setLoading(false)
-		}
-	}, [])
+		  setTimeout(() => {
+			setLoading(false);
+		  }, 1200); // Задержка в 2000 миллисекунд (2 секунды)
+		};
+	  }, []);
+	  
 
 	return (
 		<>
